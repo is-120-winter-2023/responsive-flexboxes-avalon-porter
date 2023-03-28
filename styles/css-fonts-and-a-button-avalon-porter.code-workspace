@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "path": ".."
+    },
+    {
+      "path": "../../responsive-images-and-svg-avalon-porter/images"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "css-fonts-and-a-button-avalon-porter",
+    "liveServer.settings.port": 5501
+  }
+}
