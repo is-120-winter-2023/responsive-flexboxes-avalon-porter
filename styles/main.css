@@ -202,11 +202,11 @@ a.button:hover {
 /***** Hero *****/
 
 .hero {
-  position: relative;
-  /* This will force the hero to fill the height of the viewport.
-  If you do this, you need to add height: 100% and object-fit: cover
-  to the image. See the .hero img declaration below. */
-  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
 }
 
 /* uncomment this declaration to see the gradient overlay */
@@ -215,7 +215,9 @@ a.button:hover {
 } */
 
 .hero picture {
-  height: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .hero img {
@@ -224,27 +226,13 @@ a.button:hover {
 }
 
 /* using a pseudo-element for a gradient overlay  */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: linear-gradient(
-    to bottom,
-    rgb(0 0 0 / 0%) 40%,
-    rgb(0 0 0 / 60%)
-  );
-}
 
 .hero .text-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   position: absolute;
-  inset: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  color: #fff;
-  padding: 0 var(--gutter);
 }
 
 .hero h1 {
@@ -253,7 +241,7 @@ a.button:hover {
   font-size: 5rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  text-shadow: 1px 1px 2px #000;
+  text-shadow: 1px 1px #000;
 }
 
 .hero p {
