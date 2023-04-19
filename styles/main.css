@@ -216,11 +216,14 @@ a.button:hover {
 
 .hero picture {
   display: block;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .hero img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -463,7 +466,7 @@ header nav a[href]:hover::after {
 }
 
 .hero-text-about {
-  position: absolute;
+  position: relative;
   inset: 0;
   display: flex;
   flex-direction: column;
